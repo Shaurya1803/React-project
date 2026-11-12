@@ -11,14 +11,13 @@ function Flipcoin(){
         let face = randomNumber <= 0.5 ? "Head" : "Tail" 
         setCurrFace(face);
 
-
-
     }
    
     return(
         <div>
             <Coin side={CurrFace} />
             <button onClick={handleFlip}>FlipCoin</button>
+            <p>{CurrFace}</p>
         </div>
     )
 }
